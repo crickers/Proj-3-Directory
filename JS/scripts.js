@@ -12,3 +12,7 @@ filterOption.addEventListener("click", filterTodo);
 //functions
 function addTodo(event) {
     event.preventDefault();
+
+//todo DIV
+const todoDiv = document.createElement('div');
+todoDiv.classList.add('todo');
