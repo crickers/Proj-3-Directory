@@ -25,3 +25,9 @@ todoDiv.appendChild(newTodo);
 if(todoInput.value === ""){
     return null
 }
+
+//check BUTTON
+const completedButton = document.createElement('button');
+completedButton.innerHTML = '<i class="fas fa-check"></i>';
+completedButton.classList.add('complete_btn')
+todoDiv.appendChild(completedButton);
