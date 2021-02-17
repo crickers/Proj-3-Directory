@@ -11,3 +11,28 @@ body {
   color: white;
   min-height: 100vh;
 }
+/* STYLE THE INPUT ELEMENT AND BUTTON */
+header,
+form {
+  display: flex;
+  min-height: 15vh;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.4rem;
+  border: none;
+  font-size: 1.6rem;
+  background: white;
+}
+form button {
+  color: #c065c0;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #c065c0;
+  color: white;
+}
