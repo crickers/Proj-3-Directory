@@ -36,3 +36,59 @@ form button:hover {
   background: #c065c0;
   color: white;
 }
+/*DROPDOWN STYLING*/
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #c065c0;
+  width: 8rem;
+  cursor: pointer;
+  padding: 0.7rem;
+}
+.select::after {
+  content: "\25bc";
+  position: absolute;
+  color: #c065c0;
+  top: 7px;
+  right: 6px;
+  pointer-events: none;
+}
+.select:hover::after {
+  color: #583429;
+}
+/* STYLE THE CONTAINER WHERE THE TASKS ARE*/
+.todo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo_list {
+  min-width: 40%;
+  list-style: none;
+}
+
+.todo {
+  margin: 5px auto;
+  background: white;
+  color: #000000;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+}
