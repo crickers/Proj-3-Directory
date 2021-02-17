@@ -41,3 +41,16 @@ todoDiv.appendChild(completedButton);
  todoList.appendChild(todoDiv);
  //Clear todo input VALUE
  todoInput.value = ""
+
+ //DELETE & CHECK
+function deleteCheck(e) {
+    const item = e.target;
+    //DELETE ITEM
+    if (item.classList[0] === "delete_btn") {
+        const todo = item.parentElement;
+        //ANIMATION TRANSITION
+        todo.classList.add("fall")
+        todo.addEventListener('transitionend', function () {
+            todo.remove()
+        })
+    }
