@@ -8,3 +8,7 @@ const filterOption = document.querySelector(".filter_todo");
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("click", filterTodo);
+
+//functions
+function addTodo(event) {
+    event.preventDefault();
